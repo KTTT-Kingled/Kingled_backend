@@ -1,4 +1,3 @@
-import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
@@ -9,7 +8,6 @@ import categoryRoutes from './routes/category.js';
 import productRoutes from './routes/product.js';
 
 //init app.js
-dotenv.config();
 const app = express();
 
 //middlewares
@@ -29,7 +27,7 @@ app.use('/categories', categoryRoutes);
 //connect to db
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => console.log('Connected to db!'));
 
-const port = process.env.PORT || $PORT;
+const port = process.env.PORT;
 
 app.listen(port, () => {
   console.log(`Listening to ${port}`);
