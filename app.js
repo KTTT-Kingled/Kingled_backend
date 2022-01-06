@@ -11,7 +11,7 @@ import productRoutes from './routes/product.js';
 const app = express();
 
 //middlewares
-app.use(morgan('dev'));
+app.use(morgan('tiny'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
