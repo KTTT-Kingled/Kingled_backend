@@ -18,6 +18,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //routes
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 app.use('/auth', authRoutes);
 app.use('/address', addressRoutes);
 app.use('/products', productRoutes);
@@ -26,7 +29,7 @@ app.use('/categories', categoryRoutes);
 //connect to db
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => console.log('Connected to db!'));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || $PORT;
 
 app.listen(port, () => {
   console.log(`Listening to ${port}`);
