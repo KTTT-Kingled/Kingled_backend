@@ -48,14 +48,26 @@ router.post('/city', (req, res) => {
 });
 
 router.get('/district', (req, res) => {
-    //find all districts
-    district.find({}, (err, cities) => {
-        if (err) {
-            res.send(err);
-        } else {
-            res.json(cities);
-        }
-    });
+    //find all districts in params.query.city (code), find all districts if no city is specified 
+    if (req.query.city) {
+        console.log(typeof(req.query.city));
+        district.find({ parent_code: req.query.city }, (err, districts) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json(districts);
+            }
+        });
+    }
+    else {
+        district.find({}, (err, districts) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json(districts);
+            }
+        });
+    }
 });
 // create route to add district to database
 router.post('/district', (req, res) => {
@@ -81,14 +93,25 @@ router.post('/district', (req, res) => {
 });
 
 router.get('/ward', (req, res) => {
-    //find all wards
-    ward.find({}, (err, cities) => {
-        if (err) {
-            res.send(err);
-        } else {
-            res.json(cities);
-        }
-    });
+    //find all wards in params.query.district (code), find all wards if no district is specified
+    if (req.query.district) {
+        ward.find({ parent_code: req.query.district }, (err, wards) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json(wards);
+            }
+        });
+    }
+    else {
+        ward.find({}, (err, wards) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.json(wards);
+            }
+        });
+    }
 });
 
 // create route to add ward to database
