@@ -19,10 +19,10 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
   res.send('Hello World');
 });
-app.use('/auth', authRoutes);
-app.use('/address', addressRoutes);
-app.use('/products', productRoutes);
-app.use('/categories', categoryRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/address', addressRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/categories', categoryRoutes);
 
 //connect to db
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => console.log('Connected to db!'));
