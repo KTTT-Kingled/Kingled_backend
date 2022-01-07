@@ -24,7 +24,7 @@ async function Category(url, base_url) {
                 url: base_url + $(element).attr('href'),
             });
         });
-        fs.writeFile('./utils/productCrawler/categories.json', JSON.stringify(categories_array), (err) => {
+        fs.writeFile('./utils/productImport/categories.json', JSON.stringify(categories_array), (err) => {
             if (err) {
                 console.error(err);
                 return;
@@ -99,7 +99,7 @@ async function ProductInfo(productList) {
             });
             // push info to productInfo array
             productInfo.push({
-                code: $('.property div span a').first().text(),
+                code: $('.property div label').first().text() === 'Mã SP' ? $('.property div span a').first().text() : '',
                 name: $('.infoimage .image div img').first().attr('alt'),
                 images: productImages,
                 category: productList[i].category,
@@ -110,7 +110,7 @@ async function ProductInfo(productList) {
             });
             await timer(666);
         }
-        fs.writeFile('./utils/productCrawler/products.json', JSON.stringify(productInfo), (err) => {
+        fs.writeFile('./utils/productImport/products.json', JSON.stringify(productInfo), (err) => {
             if (err) {
                 console.error(err);
                 return;

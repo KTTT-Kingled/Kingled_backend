@@ -21,7 +21,7 @@ const productsArr = Object.keys(products).map(key => products[key]);
 // );
 
 productsArr.forEach(product => {
-    fetch("http://localhost:3000/products/add", {
+    fetch("http://localhost:3000/api/products/add", {
         method: "POST",
         headers: {
         "Content-Type": "application/json"
