@@ -1,1 +1,98 @@
-[{"name":"Âm Trần Tán Quang","slug":"am-tran-downlight","img":"https://images.kingled.vn/data/ProductGroup/83A147E8-2778-42DE-BBAB-B0E0FDD46052/den-led-am-tran-diamond-10w-doi-mau.jpg?h=100","url":"https://kingled.vn/am-tran-downlight"},{"name":"Spotlight Âm Trần","slug":"den-spotlight","img":"https://images.kingled.vn/data/ProductGroup/779135DD-78E1-413D-9263-D61E1198DFDD/den-am-tran-chieu-roi-spotlight.jpg?h=100","url":"https://kingled.vn/den-spotlight"},{"name":"Đèn Led Panel","slug":"den-led-panel","img":"https://images.kingled.vn/data/ProductGroup/16DDE13C-3648-4E0B-A97B-F10686F7E93E/den-panel-tam-4.jpg?h=100","url":"https://kingled.vn/den-led-panel"},{"name":"Đèn rọi ray","slug":"den-roi-ray","img":"https://images.kingled.vn/data/ProductGroup/142805FA-6723-4E9E-ABD3-EF75FEA83A3D/den-roi-ray.jpg?h=100","url":"https://kingled.vn/den-roi-ray"},{"name":"Đèn tường Led","slug":"den-tuong","img":"https://images.kingled.vn/data/ProductGroup/5DC6B60D-FC82-4A4A-98E8-B3043F2EEE99/den-tuong-led.jpg?h=100","url":"https://kingled.vn/den-tuong"},{"name":"Đèn rọi tranh","slug":"den-roi-tranh-roi-guong","img":"https://images.kingled.vn/data/ProductGroup/1693033F-B73A-4A42-987D-E3D529A7215A/den-soi-tranh-kingled.jpg?h=100","url":"https://kingled.vn/den-roi-tranh-roi-guong"},{"name":"Đèn Led Dây","slug":"den-led-day","img":"https://images.kingled.vn/data/ProductGroup/73D7CCED-DD8E-46B0-8ABA-2811345C5354/led-day.jpg?h=100","url":"https://kingled.vn/den-led-day"},{"name":"Đèn Led Ốp Trần","slug":"den-led-op-tran","img":"https://images.kingled.vn/data/ProductGroup/A4ED953E-B632-49D1-8042-BB5FEF004798/den-led-op-tran-tran-vien-otv.jpg?h=100","url":"https://kingled.vn/den-led-op-tran"},{"name":"Đèn Led Bulb","slug":"den-led-bulb","img":"https://images.kingled.vn/data/ProductGroup/CAEDA5E5-3FC5-4F3B-8E63-C5D106588569/den-led-bulb-kingled.jpg?h=100","url":"https://kingled.vn/den-led-bulb"},{"name":"Đèn ống bơ","slug":"den-ong-bo","img":"https://images.kingled.vn/data/ProductGroup/CBB405D1-0AE7-4E21-8217-116595738213/ong-bơ-kingled.jpg?h=100","url":"https://kingled.vn/den-ong-bo"},{"name":"Đèn Thả Led","slug":"den-tha-led","img":"https://images.kingled.vn/data/ProductGroup/1AB8B518-ACF6-4928-B211-C5B593F85950/den-tha-trang-tri-kingled-1.jpg?h=100","url":"https://kingled.vn/den-tha-led"},{"name":"Đèn Led Tuýp","slug":"den-led-tube","img":"https://images.kingled.vn/data/ProductGroup/F82ACFE0-466B-4F3F-8F31-A0AC624BA66F/den-tuyp-kingled.jpg?h=100","url":"https://kingled.vn/den-led-tube"},{"name":"Đèn sân vườn","slug":"den-san-vuon","img":"https://images.kingled.vn/data/ProductGroup/8FE79464-176C-45A1-AB11-241632A82CB5/den-san-vuon-dien-mot-chieu-cao-50cm.jpg?h=100","url":"https://kingled.vn/den-san-vuon"},{"name":"Đèn pha LED","slug":"den-pha-led","img":"https://images.kingled.vn/data/ProductGroup/ACF3DF56-AB3A-4840-BDDE-D0AF4DEAE299/Pha-Led.png?h=100","url":"https://kingled.vn/den-pha-led"},{"name":"Đèn Bàn Led","slug":"den-ban-led","img":"https://images.kingled.vn/data/ProductGroup/DF6C0424-0234-4AD9-A957-95555AD70A04/OppleToronto012.jpg?h=100","url":"https://kingled.vn/den-ban-led"},{"name":"ĐÈN HIGHBAY UFO","slug":"den-nha-xuong","img":"https://images.kingled.vn/data/ProductGroup/A36C4970-892F-4F9C-A533-A008C673D724/den-led-nha-xuong-hightbay-ufo.jpg?h=100","url":"https://kingled.vn/den-nha-xuong"}]
+[
+    {
+        "name": "Âm Trần Tán Quang",
+        "slug": "am-tran-downlight",
+        "img": "https://i.imgur.com/T8TPB0f.png",
+        "url": "https://kingled.vn/am-tran-downlight"
+    },
+    {
+        "name": "Spotlight Âm Trần",
+        "slug": "den-spotlight",
+        "img": "https://i.imgur.com/G4TC60g.png",
+        "url": "https://kingled.vn/den-spotlight"
+    },
+    {
+        "name": "Đèn Led Panel",
+        "slug": "den-led-panel",
+        "img": "https://i.imgur.com/vJeFfl8.png",
+        "url": "https://kingled.vn/den-led-panel"
+    },
+    {
+        "name": "Đèn rọi ray",
+        "slug": "den-roi-ray",
+        "img": "https://i.imgur.com/q1VY9kU.png",
+        "url": "https://kingled.vn/den-roi-ray"
+    },
+    {
+        "name": "Đèn tường Led",
+        "slug": "den-tuong",
+        "img": "https://i.imgur.com/Ig564g6.png",
+        "url": "https://kingled.vn/den-tuong"
+    },
+    {
+        "name": "Đèn rọi tranh",
+        "slug": "den-roi-tranh-roi-guong",
+        "img": "https://i.imgur.com/tw7V28i.png",
+        "url": "https://kingled.vn/den-roi-tranh-roi-guong"
+    },
+    {
+        "name": "Đèn Led Dây",
+        "slug": "den-led-day",
+        "img": "https://i.imgur.com/OBT5ux6.png",
+        "url": "https://kingled.vn/den-led-day"
+    },
+    {
+        "name": "Đèn Led Ốp Trần",
+        "slug": "den-led-op-tran",
+        "img": "https://i.imgur.com/oR5bXkI.png",
+        "url": "https://kingled.vn/den-led-op-tran"
+    },
+    {
+        "name": "Đèn Led Bulb",
+        "slug": "den-led-bulb",
+        "img": "https://i.imgur.com/2mD9LuK.png",
+        "url": "https://kingled.vn/den-led-bulb"
+    },
+    {
+        "name": "Đèn ống bơ",
+        "slug": "den-ong-bo",
+        "img": "https://i.imgur.com/3k1dAIf.png",
+        "url": "https://kingled.vn/den-ong-bo"
+    },
+    {
+        "name": "Đèn Thả Led",
+        "slug": "den-tha-led",
+        "img": "https://i.imgur.com/ri1cpe4.png",
+        "url": "https://kingled.vn/den-tha-led"
+    },
+    {
+        "name": "Đèn Led Tuýp",
+        "slug": "den-led-tube",
+        "img": "https://i.imgur.com/ysF0hzV.png",
+        "url": "https://kingled.vn/den-led-tube"
+    },
+    {
+        "name": "Đèn sân vườn",
+        "slug": "den-san-vuon",
+        "img": "https://i.imgur.com/xwVSV8S.png",
+        "url": "https://kingled.vn/den-san-vuon"
+    },
+    {
+        "name": "Đèn pha LED",
+        "slug": "den-pha-led",
+        "img": "https://i.imgur.com/7VsLj7I.png",
+        "url": "https://kingled.vn/den-pha-led"
+    },
+    {
+        "name": "Đèn Bàn Led",
+        "slug": "den-ban-led",
+        "img": "https://i.imgur.com/Sghgfdv.png",
+        "url": "https://kingled.vn/den-ban-led"
+    },
+    {
+        "name": "ĐÈN HIGHBAY UFO",
+        "slug": "den-nha-xuong",
+        "img": "https://i.imgur.com/umUl2a4.png",
+        "url": "https://kingled.vn/den-nha-xuong"
+    }
+]
