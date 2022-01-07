@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
@@ -10,7 +10,7 @@ import productRoutes from './routes/product.js';
 
 //init app.js
 const app = express();
-dotenv.config();
+// dotenv.config();
 
 //middlewares
 app.use(morgan('tiny'));
@@ -29,8 +29,8 @@ app.use('/api/categories', categoryRoutes);
 //connect to db
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => console.log('Connected to db!'));
 
-// const port = process.env.PORT;
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
+// const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Listening to ${port}`);
