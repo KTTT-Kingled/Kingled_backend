@@ -9,7 +9,10 @@ router.get('/all', (req, res) => {
         if (err) {
             res.send(err);
         } else {
-            res.json(categories);
+            res.json([{
+                title: 'All Categories',
+                data: categories,
+            }]);
         }
     });
 });
