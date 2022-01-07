@@ -27,10 +27,25 @@ router.get('/search', (req, res) => {
             if (err) {
                 res.send(err);
             } else {
-                res.json(products);
+                res.json([{
+                            results: products.length,
+                            data: products,
+                        }]);
             }
         },
     );
+});
+
+// create route to get detail product by code
+router.get('/detail', (req, res) => {
+    const { code } = req.query;
+    product.findOne({ code: req.query.code }, (err, product) => {
+        if (err) {
+            res.send(err);
+        } else {
+            res.json(product);
+        }
+    });
 });
 
 // create route to add new product
