@@ -35,16 +35,20 @@ router.post('/login', (req, res) => {
                             { expiresIn: '1h' },
                         );
                         res.json({
+                            success: true,
+                            user: user,
                             message: 'User logged in!',
                             token,
                         });
                     } else {
                         res.json({
+                            success: false,
                             message: 'Wrong password!',
                         });
                     }
                 } else {
                     res.json({
+                        success: false,
                         message: 'User not found!',
                     });
                 }
