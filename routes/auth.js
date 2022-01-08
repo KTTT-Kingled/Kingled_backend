@@ -20,7 +20,7 @@ router.post('/login', (req, res) => {
     user.init().then(() => {
         user.findOne(
             {
-                $or: [{ email: req.body.email }, { username: req.body.username }, { phone: req.body.phone }],
+                $or: [{ email: req.body.username }, { username: req.body.username }, { phone: req.body.username }],
             },
             (err, user) => {
                 if (err) {
