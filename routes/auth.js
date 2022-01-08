@@ -61,6 +61,7 @@ router.post('/register', (req, res) => {
                 res.send(err);
             } else {
                 const newUser = new user({
+                    fullName: req.body.fullName,
                     username: req.body.username,
                     password: hash,
                     address: req.body.address,
