@@ -9,7 +9,7 @@ const orderSchema = new Schema({
         required: true,
     },
     orderAddress: {
-        type: Map,
+        type: String,
         required: true,
     },
     orderProducts: {
