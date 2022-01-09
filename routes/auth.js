@@ -135,7 +135,7 @@ router.put('/changePassword', (req, res) => {
                 if (err) {
                     res.send(err);
                 } else if (user) {
-                    if (bcrypt.compareSync(req.body.currentPassword, user.password)) {
+                    if (bcrypt.compareSync(req.body.currentpassword, user.password)) {
                         bcrypt.hash(req.body.newPassword, 10, (err, hash) => {
                             if (err) {
                                 res.send(err);
