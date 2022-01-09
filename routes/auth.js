@@ -124,4 +124,64 @@ router.put('/update', (req, res) => {
     });
 });
 
+//create route to change user's password if currentpassword is correct
+router.put('/changePassword', (req, res) => {
+    user.init().then(() => {
+        user.findOne(
+            {
+                $or: [{ email: req.body.email }, { username: req.body.username }, { phone: req.body.phone }],
+            },
+            (err, user) => {
+                if (err) {
+                    res.send(err);
+                } else if (user) {
+                    if (bcrypt.compareSync(req.body.currentPassword, user.password)) {
+                        bcrypt.hash(req.body.newPassword, 10, (err, hash) => {
+                            if (err) {
+                                res.send(err);
+                            } else {
+                                user.findOneAndUpdate(
+                                    {
+                                        $or: [
+                                            { email: req.body.email },
+                                            { username: req.body.username },
+                                            { phone: req.body.phone },
+                                        ],
+                                    },
+                                    {
+                                        $set: {
+                                            password: hash,
+                                            updatedAt: Date.now(),
+                                        },
+                                    },
+                                    (err) => {
+                                        if (err) {
+                                            res.send(err);
+                                        } else {
+                                            res.json({
+                                                success: true,
+                                                message: 'Password changed!',
+                                            });
+                                        }
+                                    },
+                                );
+                            }
+                        });
+                    } else {
+                        res.json({
+                            success: false,
+                            message: 'Wrong current password!',
+                        });
+                    }
+                } else {
+                    res.json({
+                        success: false,
+                        message: 'User not found!',
+                    });
+                }
+            },
+        );
+    });
+});
+
 export default router;
