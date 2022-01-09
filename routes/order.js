@@ -52,14 +52,16 @@ router.post('/add', (req, res) => {
             orderProducts: req.body.orderProducts,
             totalPrice: req.body.totalPrice,
         });
-        newOrder.save((err) => {
+        newOrder.save((err, order) => {
             if (err) {
                 res.send(err);
             } else {
                 res.json({
-                    message: 'Order added!',
+                    message: 'Order added successfully',
+                    success: true,
+                    data: order,
                 });
-            }
+            }            
         });
     });
 });
