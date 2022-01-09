@@ -136,6 +136,7 @@ router.put('/changePassword', (req, res) => {
                     res.send(err);
                 } else if (user) {
                     if (bcrypt.compareSync(req.body.currentpassword, user.password)) {
+                        console.log('current password is correct');
                         bcrypt.hash(req.body.newpassword, 10, (err, hash) => {
                             if (err) {
                                 res.send(err);
@@ -168,6 +169,7 @@ router.put('/changePassword', (req, res) => {
                             }
                         });
                     } else {
+                        console.log('current password is incorrect');
                         res.json({
                             success: false,
                             message: 'Wrong current password!',
