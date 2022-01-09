@@ -144,8 +144,13 @@ router.put('/changePassword', (req, res) => {
                     (err) => {
                         if (err) {
                             res.send(err);
+                            res.json({
+                                success: false,
+                                message: 'Something wrong!',
+                            });
                         } else {
                             res.json({
+                                success: true,
                                 message: 'User password changed!',
                             });
                         }
